@@ -1,0 +1,60 @@
+.footer {
+    background: $bg-color;
+    position: relative;
+    &__invite {
+        background: url("../images/content/surfclinic.png") 0 -175px / cover no-repeat;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 550px;
+        position: relative;
+    }
+    &__field {
+        background: url("../images/content/footer.png") 0 0 / cover no-repeat;
+        mix-blend-mode: hard-light;
+        height: 679px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 71px;
+        &-left {
+            margin-right: 75px;
+        }
+        &-left, &-right {
+            display: flex;
+            flex-direction: column;   
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;  
+            margin-bottom: 80px;    
+        }
+        &-link {
+            margin-bottom: 25px;
+            position: relative;
+            padding-right: 23px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 25%;
+                width: 10px;
+                height: 10px;
+                border-left: 3px solid #bebdbd;
+                border-bottom: 3px solid #bebdbd;
+                transform: rotate(225deg);
+                right: -10%;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-logo {
+            position: absolute;
+            top: 38%;
+            left: 44%;
+            height: 421px;
+            width: 308px;
+        }
+    }
+}

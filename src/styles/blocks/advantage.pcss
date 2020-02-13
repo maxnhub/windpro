@@ -1,0 +1,200 @@
+.advantage {
+    background: $bg-color;
+    padding-bottom: 200px;
+    &__title {
+        margin-bottom: 131px;
+    }
+    &__content {
+        position: relative;
+        width: 1311px;
+        height: 660px;
+        margin: 0 auto;
+        &-experience {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &-number {
+                font-family: Open Sans, sans-serif;
+                font-size: 245px;
+                line-height: 206px;
+                font-weight: 800;
+                background: linear-gradient(134.57deg, #FF0038 0%, #640012 30%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: #FF0038;
+            }
+            &-text {
+                font-weight: bold;
+                font-size: 27.7435px;
+                line-height: 33px;
+                text-transform: uppercase;
+                max-width: 220px;
+                padding-left: 120px;
+            }
+        }
+        &-students {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            position: absolute;
+            top: 45%;
+            left: 30%;
+            &-subtext {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                text-transform: uppercase;
+                padding-left: 20px;
+            }
+            &-number {
+                font-family: Open Sans, sans-serif;
+                font-size: 190px;
+                line-height: 145px;
+                margin-bottom: 10px;
+                font-weight: 800;
+                background: linear-gradient(134.57deg,#ff0038,#640012 70%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: #FF0038;
+                padding-right: 25px;
+                padding-bottom: 5px;
+            }
+            &-text {
+                font-weight: bold;
+                font-size: 27.7435px;
+                line-height: 33px;
+                text-transform: uppercase;
+                align-self: flex-end;
+            }
+        }
+        &-education {
+            display: flex;
+            width: fit-content;
+            position: absolute;
+            top: -8%;
+            right: 4%;
+            &-subtext {
+                align-self: flex-end;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                text-transform: uppercase;
+            }
+            &-number {
+                font-family: Open Sans, sans-serif;
+                font-size: 190px;
+                line-height: 150px;
+                font-weight: 800;
+                background: linear-gradient(134.57deg,#ff0038,#640012 70%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: #FF0038;
+                padding-top: 50px;
+                width: 100%;
+            }
+            &-text {
+                font-weight: bold;
+                font-size: 27.7435px;
+                line-height: 33px;
+                text-transform: uppercase;
+                max-width: 230px;
+
+            }
+        }
+        &-result {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            position: absolute;
+            top: 25%;
+            right: -5%;
+            &-raw {
+                display: flex;
+                width: fit-content;
+                align-items: flex-end;
+                margin-bottom: 10px;
+            }
+            &-subtext {
+                font-family: BookAntiqua;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                text-transform: uppercase;
+                color: $text-color;
+            }
+            &-number {
+                font-family: Open Sans, sans-serif;
+                font-size: 190px;
+                line-height: 150px;
+                font-weight: 800;
+                background: linear-gradient(134.57deg,#ff0038,#640012 70%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: #FF0038;
+                width: 100%;
+                padding-right: 15px;
+            }
+            &-percent {
+                font-size: 65px;
+                line-height: 65px;
+                width: 100%;
+                font-weight: 800;
+                background: linear-gradient(134.57deg,#ff0038,#640012 70%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: #FF0038;
+            }
+            &-text {
+                font-weight: bold;
+                font-size: 27.7435px;
+                line-height: 33px;
+                text-align: right;
+                text-transform: uppercase;
+            }
+        }
+        &-point {
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            border: 0.533053px solid #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            &-circle {
+                width: 25.9px;
+                height: 25.9px;
+                border-radius: 50%;
+                background: #fff;
+            }
+            &--left {
+                top: 9%;
+                left: 23%;
+            }
+            &--center {
+                top: 39%;
+                left: 48%;
+            }
+            &--right {
+                top: 0;
+                right: 29%;
+            }
+        }
+        &-line {
+            position: absolute;
+            background: #fff;
+            width: 0.5px;
+            height: 375px;
+            &--left {
+                top: -1%;
+                left: 37%;
+                transform: rotate(-58.73deg);
+            }
+            &--right {
+                top: -5%;
+                right: 41%;
+                transform: rotate(45.73deg);
+            }
+        }
+    }
+}

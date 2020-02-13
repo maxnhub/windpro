@@ -1,0 +1,31 @@
+.popup {
+    display: none;
+    &--active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 166px;
+        background: #fff;
+    }
+    &__menu {
+        display: flex;
+        justify-content: center;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            line-height: 19px;
+            text-align: right;
+            color: #475D68;
+            margin-right: 51px;;
+            &:last-child {
+                margin-right: 0;
+            }
+            &-link {
+                margin-bottom: 12px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

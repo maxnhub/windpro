@@ -1,0 +1,45 @@
+.hamburger-menu {
+    /* display: none; */
+    position: absolute;
+    top: 8px;
+    vertical-align: middle;
+    height: 3.32px;
+    align-items: center;
+    z-index: 10;
+}
+
+.hamburger-menu__stick {
+    &, &:before, &:after {
+    background: white;
+    width: 34px;
+    height: 3.32px;
+    border-radius: 0.1875rem;
+    }
+
+    &:before, &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    }
+
+    &:before {
+    top: -7px;
+    }
+
+    &:after {
+    bottom: -7px;
+    }
+}
+
+/* если по клику на бургер будет открываться попап и нужен будет крестик */
+/* .hamburger-menu--active .hamburger-menu__stick {
+    transform:rotate(50deg);
+
+    &:before {
+    opacity: 0;
+    }
+
+    &:after {
+    transform:rotate(80deg);
+    }
+} */

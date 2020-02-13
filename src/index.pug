@@ -1,0 +1,301 @@
+include ./mixins.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(href="https://img.icons8.com/pastel-glyph/64/000000/hearts.png" rel="shortcut icon" type="image/x-icon")
+    link(href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css")
+    link(rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css")
+    title WindPro | main page
+  body
+    .wrapper
+      .maincontent
+        //- +image('content/logo.png', 'user-pic')
+        //- +icon('link', 'link-class')
+        //- .icon-bg
+        section.preintro
+          header.header
+            .popup
+              ul.popup__menu
+                li.popup__menu-item
+                  a.popup__menu-item-link(href="#") Об инструкторе
+                  a.popup__menu-item-link(href="#") О школе
+                  a.popup__menu-item-link(href="#") Расписание
+                li.popup__menu-item
+                  a.popup__menu-item-link(href="#") Программы
+                  a.popup__menu-item-link(href="#") Стоимость
+                  a.popup__menu-item-link(href="#") Акции
+                li.popup__menu-item
+                  a.popup__menu-item-link(href="#") Новости
+                  a.popup__menu-item-link(href="#") 
+                    | Учебный 
+                    br
+                    | материал
+                li.popup__menu-item
+                  a.popup__menu-item-link(href="#") Фото / видео
+                  a.popup__menu-item-link(href="#") Контакты
+            .header__content
+              
+              +image('content/logo.png', 'logo-pic logo-pic--header')
+              .social__links.social__links--header
+                ul.social__links-list.social__links-list--header
+                  li.social__links-item
+                    a.social__links-link(href="#")
+                      +icon('vk', 'social__links-link-icon')
+                  li.social__links-item
+                    a.social__links-link(href="#")
+                      +icon('insta', 'social__links-link-icon')
+                  li.social__links-item
+                    a.social__links-link(href="#")
+                      +icon('facebook', 'social__links-link-icon')
+                  li.social__links-item
+                    a.social__links-link(href="#")
+                      +icon('twitter', 'social__links-link-icon')
+                ul.social__links-list.social__links-list--header.social__links-list--phone
+                  li.social__links-item
+                    a.social__links-link(href="#")
+                      +icon('phone', 'social__links-link-icon')
+                  li.social__links-item
+                    a.social__links-link(href="#")
+                      +icon('whatsup', 'social__links-link-icon social__links-link-icon--whatsup')
+                  li.social__links-item
+                    a.social__links-link(href="#")
+                      +icon('viber', 'social__links-link-icon social__links-link-icon--viber')
+                p.social__links-text +7 (926) 980 66 55
+              nav.navbar.navbar--header
+                ul.navbar__list
+                  li.navbar__list-item
+                    a.navbar__list-item-link(href="#") Всё о школе
+                  li.navbar__list-item
+                    a.navbar__list-item-link(href="#") Стоимость
+                  li.navbar__list-item
+                    a.navbar__list-item-link(href="#") Новости
+                  li.navbar__list-item
+                    a.navbar__list-item-link(href="#") Акции
+                  li.navbar__list-item
+                    a.navbar__list-item-link(href="#") Программы
+                  li.navbar__list-item.navbar__list-item--burger
+                    a.hamburger-menu(href="#")
+                      .hamburger-menu__stick
+        section.intro
+          .intro__content
+            .container
+              .intro__content-about
+                p.intro__content-about-text ПУНКТ НАЗНАЧЕНИЯ - ГРЕЦИЯ,
+                p.intro__content-about-text РОДОС,
+                p.intro__content-about-text МЫС ПРАСОНИСИ
+              .intro__content-allright
+                .intro__content-allright-item.intro__content-allright-item--place
+                  .intro__content-allright-point
+                    .intro__content-allright-point-circle
+                  .intro__content-allright-text Правильное место
+                .intro__content-allright-item.intro__content-allright-item--mood
+                  .intro__content-allright-point
+                    .intro__content-allright-point-circle
+                  .intro__content-allright-text Правильный настрой
+                .intro__content-allright-item.intro__content-allright-item--instructor
+                  .intro__content-allright-point
+                    .intro__content-allright-point-circle
+                  .intro__content-allright-text Правильный инструктор
+                .intro__content-allright-line
+                .intro__content-allright-line2
+          .intro__invite
+            h1.intro__invite-title
+              | Школа виндсерфинга 
+              span #1 
+              | в ПРАСОНИСИ 
+            p.intro__invite-desc Целью нашего обучения является - максимально поднять уровень вашего катания до состояния, когда вы будете себя чувствовать комфортно в любых условиях, и получать удовлетворение от проведенного на воде времени.
+            form.form__invite(action="")
+              input.form__invite-input(type="text" name="name" placeholder="Фамилия Имя" required)
+              input.form__invite-input(type="tel" name="phone" placeholder="Контактный телефон" required)
+              button.form__invite-btn(type="submit") Хочу к вам!
+            +image('content/serfman-intro1.png', 'intro__invite-pic')
+        section.visual
+          .visual__content
+            .visual__content-small
+              p.visual__content-small-text Виндсерфинг учит доверять миру!
+              +image('content/visualsmall.png', 'visual__content-small-pic')
+            .visual__content-big
+              +image('content/visualbig.png', 'visual__content-big-pic')
+              p.visual__content-big-text Виндсерфинг - это люди и процессы
+              p.visual__content-big-subtext Этот спорт позволит Вам выйти из хронического состояния «хочу, но не могу». Наши упрямые инструкторы и отлаженные программы способны достучаться до любого, даже самого заблокированного сознания.
+        section.news
+          h2.section__title.section__title--news Новости
+          .news__content
+            .news__content-arrow-box.news__content-arrow-box--prev
+              .news__content-arrow.news__content-arrow--prev
+            .news__content-arrow-box.news__content-arrow-box--next
+              .news__content-arrow.news__content-arrow--next
+            .swiper-container 
+              ul.news__content-list.swiper-wrapper  
+                li.news__content-item.swiper-slide
+                  .news__content-block
+                    h3.news__content-item-title 1 ИСТОРИЯ ПРАСОНИСИ ИЗ ПЕРВЫХ УСТ
+                    p.news__content-item-desc Итак, под закрытие летнего сезона мы решили пройти по стопам памяти Прасониси с небезызвестной легендой...
+                  button.news__content-item-btn(type="button") Читать
+                li.news__content-item.swiper-slide
+                  .news__content-block
+                    h3.news__content-item-title 2 ИСТОРИЯ ПРАСОНИСИ ИЗ ПЕРВЫХ УСТ
+                    p.news__content-item-desc Итак, под закрытие летнего сезона мы решили пройти по стопам памяти Прасониси с небезызвестной легендой...
+                  button.news__content-item-btn(type="button") Читать
+                li.news__content-item.swiper-slide
+                  .news__content-block
+                    h3.news__content-item-title 3 ИСТОРИЯ ПРАСОНИСИ ИЗ ПЕРВЫХ УСТ
+                    p.news__content-item-desc Итак, под закрытие летнего сезона мы решили пройти по стопам памяти Прасониси с небезызвестной легендой...
+                  button.news__content-item-btn(type="button") Читать
+                li.news__content-item.swiper-slide
+                  .news__content-block
+                    h3.news__content-item-title 4 ИСТОРИЯ ПРАСОНИСИ ИЗ ПЕРВЫХ УСТ
+                    p.news__content-item-desc Итак, под закрытие летнего сезона мы решили пройти по стопам памяти Прасониси с небезызвестной легендой...
+                  button.news__content-item-btn(type="button") Читать
+                li.news__content-item.swiper-slide
+                  .news__content-block
+                    h3.news__content-item-title 5 ИСТОРИЯ ПРАСОНИСИ ИЗ ПЕРВЫХ УСТ
+                    p.news__content-item-desc Итак, под закрытие летнего сезона мы решили пройти по стопам памяти Прасониси с небезызвестной легендой...
+                  button.news__content-item-btn(type="button") Читать
+                li.news__content-item.swiper-slide
+                  .news__content-block
+                    h3.news__content-item-title 6 ИСТОРИЯ ПРАСОНИСИ ИЗ ПЕРВЫХ УСТ
+                    p.news__content-item-desc Итак, под закрытие летнего сезона мы решили пройти по стопам памяти Прасониси с небезызвестной легендой...
+                  button.news__content-item-btn(type="button") Читать
+                li.news__content-item.swiper-slide
+                  .news__content-block
+                    h3.news__content-item-title 7 ИСТОРИЯ ПРАСОНИСИ ИЗ ПЕРВЫХ УСТ
+                    p.news__content-item-desc Итак, под закрытие летнего сезона мы решили пройти по стопам памяти Прасониси с небезызвестной легендой...
+                  button.news__content-item-btn(type="button") Читать
+        section.advantage
+          h2.section__title.section__title--advantage Наши преимущества
+          .container
+            .advantage__content
+              .advantage__content-experience
+                p.advantage__content-experience-number 15
+                p.advantage__content-experience-text лет тренерского опыта
+              .advantage__content-students
+                p.advantage__content-students-subtext более
+                p.advantage__content-students-number 1400
+                p.advantage__content-students-text учеников
+              .advantage__content-education
+                p.advantage__content-education-subtext от
+                p.advantage__content-education-number 0
+                p.advantage__content-education-text уникальная методика обучения
+              .advantage__content-result 
+                .advantage__content-result-raw
+                  .advantage__content-result-subtext до
+                  .advantage__content-result-number 100
+                  .advantage__content-result-percent %
+                .advantage__content-result-text результата
+              .advantage__content-point.advantage__content-point--left
+                .advantage__content-point-circle
+              .advantage__content-point.advantage__content-point--center
+                .advantage__content-point-circle
+              .advantage__content-line.advantage__content-line--left
+              .advantage__content-point.advantage__content-point--right
+                .advantage__content-point-circle
+              .advantage__content-line.advantage__content-line--right
+        section.answer
+          .container
+            .answer__content
+              .answer__content-question “Меня часто спрашивают что такое «виндсерф клиники» и чем они отличаются от обычного обучения виндсерфингу?”
+              .answer__content-quotation
+                .answer__content-quotation-desc “Принципиально - ничем. И то и то процесс обучения. В классическом виде: Вы сначала получаете необходимые навыки в обычной школе виндсерфинга, затем накатываете часы на воде и вот, когда понимаете, прогресс застопорился, не идут новые элементы, все глиссируют, а я стою и т.п., вот тогда добро пожаловать на «курсы повышения квалификации», или виндсерф-клиники. Здесь оценят Ваш уровень катания, укажут на ошибки и в течение того времени, что вы выделили на занятия - выведут на новый уровень прогресса”
+                a.answer__content-quotation-btn(href="#") Программы и стоимость
+              .answer__content-visual
+                .answer__content-visual-left
+                  +image('content/ans1.png', 'answer__content-visual-pic answer__content-visual-pic--1')
+                  +image('content/ans2.png', 'answer__content-visual-pic answer__content-visual-pic--2')
+                  .answer__content-visual-text Евгений Кривошеев основатель школы виндсерфинга
+                .answer__content-visual-right
+                  +image('content/ans3.png', 'answer__content-visual-pic answer__content-visual-pic--3')
+                  +image('content/ans4.png', 'answer__content-visual-pic answer__content-visual-pic--4')
+        section.feedback
+          h2.section__title.section__title--feedback мнения наших учеников
+          ul.feedback__field
+            li.feedback__field-item
+              .feedback__field-item-text "Каждый о себе очень завышенного мнения, но клиника все ставит на свои места…. Я считаю что занятия под наблюдением опытных и заинтересованных в твоем результате людей важнейшая составляющая любого обучения. А самообучение хорошо когда есть еще одна жизнь в запасе. Всем в клиники. Всем лечится"
+              .feedback__field-item-author Ильнар Усманов
+              a.feedback__field-item-link(href="#")
+                p.feedback__field-item-link vk.com/zajyats
+                .feedback__field-arrow-box
+                  .feedback__field-arrow
+              .feedback__field-item-avatar
+                +image('content/feed1.png', '')
+            li.feedback__field-item.feedback__field-item--center
+              a.feedback__field-item-link.feedback__field-item-link--center(href="#")
+                p.feedback__field-item-link vk.com/batechkovlad
+                .feedback__field-arrow-box
+                  .feedback__field-arrow
+              .feedback__field-item-author.feedback__field-item-author--center Владислав Батечко
+              .feedback__field-item-text "Как итог - рекомендую всем, кто хочет действительно получать удовольствие от виндсерфинга, познакомиться с этой клиникой. Затраченные деньги на обучение в итоге окупятся степенью прогресса за короткое время и полученным удовольствием!"
+              .feedback__field-item-avatar.feedback__field-item-avatar--center
+                +image('content/feed2.png', '')
+            li.feedback__field-item.feedback__field-item--right
+              a.feedback__field-item-link.feedback__field-item-link--right(href="#")
+                p.feedback__field-item-link twitter.com/bezbuldyra
+                .feedback__field-arrow-box
+                  .feedback__field-arrow
+              .feedback__field-item-text "Даже глядя на начинающих поневоле поправил стойку, казалось бы вполне хорошую . «Добил» фордак , встал на путь к вулкану попутно перестал бояться волн. Клиника не прошла даром, впереди лето и понимание что и как можно совершенствовать и учить. Спасибо Сергею и Евгению за данные мне уроки , внимая их опыт проще и легче"
+              .feedback__field-item-author Алмаз Фатхуллин
+              .feedback__field-item-avatar.feedback__field-item-avatar--right
+                +image('content/feed3.png', '')
+        footer.footer
+          .footer__invite
+            form.form__invite(action="")
+              input.form__invite-input(type="text" name="name" placeholder="Фамилия Имя" required)
+              input.form__invite-input(type="tel" name="phone" placeholder="Контактный телефон" required)
+              button.form__invite-btn(type="submit") Хочу к вам!
+          .footer__field
+            .footer__field-left
+              .footer__field-list
+                a.footer__field-link(href="#") Об инструкторе
+                a.footer__field-link(href="#") О школе
+                a.footer__field-link(href="#") Программы
+                a.footer__field-link(href="#") Стоимость
+                a.footer__field-link(href="#") Расписание
+              ul.social__links-list.social__links-list--footer
+                li.social__links-item
+                  a.social__links-link(href="#")
+                    +icon('vk', 'social__links-link-icon')
+                li.social__links-item
+                  a.social__links-link(href="#")
+                    +icon('insta', 'social__links-link-icon')
+                li.social__links-item
+                  a.social__links-link(href="#")
+                    +icon('facebook', 'social__links-link-icon')
+                li.social__links-item
+                  a.social__links-link(href="#")
+                    +icon('twitter', 'social__links-link-icon')
+            .footer__field-right
+              .footer__field-list
+                a.footer__field-link(href="#") Акции
+                a.footer__field-link(href="#") Галерея
+                a.footer__field-link(href="#") Новости
+                a.footer__field-link(href="#") Учебный материал
+                a.footer__field-link(href="#") Контакты
+              ul.social__links-list.social__links-list--footer.social__links-list--phone
+                li.social__links-item
+                  a.social__links-link(href="#")
+                    +icon('phone', 'social__links-link-icon')
+                li.social__links-item
+                  a.social__links-link(href="#")
+                    +icon('whatsup', 'social__links-link-icon social__links-link-icon--whatsup')
+                li.social__links-item
+                  a.social__links-link(href="#")
+                    +icon('viber', 'social__links-link-icon social__links-link-icon--viber')
+              p.social__links-text.social__links-text--footer +7 (926) 980 66 55
+          +image('content/logo.png', 'footer__field-logo')
+
+
+
+
+                
+          
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")        
+    script(src="https://unpkg.com/swiper/js/swiper.js")
+    script(src="https://unpkg.com/swiper/js/swiper.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js") 
+
+

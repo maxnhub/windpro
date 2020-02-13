@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "BookAntiqua-BoldItalic";
+  src: url("./fonts/BookAntiqua-BoldItalic.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/BookAntiqua-BoldItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/BookAntiqua-BoldItalic.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/BookAntiqua-BoldItalic.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/BookAntiqua-BoldItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/BookAntiqua-BoldItalic.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/BookAntiqua-BoldItalic.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

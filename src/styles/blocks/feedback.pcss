@@ -1,0 +1,94 @@
+.feedback {
+    background: $bg-color;
+    padding-bottom: 420px;
+    &__field {
+        display: flex;
+        justify-content: center;
+        &-item {
+            padding: 15px 25px;
+            border: 0.668005px solid #276B7C;
+            border-radius: 7px;
+            font-family: Roboto;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 12px;
+            color: $text-color;
+            max-width: 225px;
+            position: relative;
+            margin-right: 154px;
+            &--center, &--right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &-text {
+                margin-bottom: 15px;
+            }
+            &-author {
+                margin-bottom: 40px;
+                &--author {
+                    margin-bottom: 18px;
+                }
+            }
+            &-link {
+                display: flex;
+                width: fit-content;
+                position: relative;
+                &--center {
+                    margin-right: 40px;
+                    margin-bottom: 61px;
+                }
+                &--right {
+                    margin-right: 40px;
+                    margin-bottom: 11px;
+                }
+            }
+            &-avatar {
+                border-radius: 50%;
+                position: absolute;
+                overflow: hidden;
+                bottom: -55px;
+                right: -55px;
+                width: 140px;
+                height: 140px;
+                &--center {
+                    top: -55px;
+                    left: -55px;
+                }
+                &--right {
+                    bottom: -55px;
+                    left: -55px;
+                }
+            }
+        }
+        &-arrow {
+            width: 25px;
+            height: 25px;
+            background: #FF0038;
+            position: relative;
+            border-radius: 50%;
+            &-box {
+                display: flex;
+                position: absolute;
+                outline: none;
+                top: -45%;
+                right: -35px;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                top: 30%;
+                width: 8px;
+                height: 8px;
+                border-left: 2.5px solid #bebdbd;
+                border-bottom: 2.5px solid #bebdbd;
+                transform: rotate(225deg);
+                left: 20%;
+            }
+        } 
+    }
+}
