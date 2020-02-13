@@ -2,6 +2,14 @@
   background: linear-gradient(269.66deg, #083451 0.74%, rgba(8, 52, 81, 0) 96.27%),
   url("../images/content/intro-bg.png") 0 0/ cover no-repeat;
   position: relative;
+  @include predesktop {
+    background: linear-gradient(269.66deg, #083451 0.74%, rgba(8, 52, 81, 0) 96.27%),
+    url("../images/content/intro-bg.png") 0 0/ cover no-repeat;
+  }
+  @include tablets {
+    background: linear-gradient(269.66deg, #083451 0.74%, rgba(8, 52, 81, 0) 96.27%),
+    url("../images/content/intro-bg-mob.png") 0 0/ cover no-repeat;
+  }
   &--active {
     background: linear-gradient(269.66deg, #083451 0.74%, rgba(8, 52, 81, 0) 96.27%),
     url("../images/content/intro-bg.png") 0 125px/ cover no-repeat;
@@ -15,6 +23,9 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      @include predesktop {
+        display: none;
+      }
       &-text {
         margin-bottom: 5px;
         &:last-child {
@@ -30,6 +41,9 @@
       width: 529px;
       height: 182.7px;
       margin-bottom: 170px;
+      @include tablets {
+        margin-right: 23%;
+      }
       &-item {
         display: flex;
         position: absolute;
@@ -70,6 +84,9 @@
         top: 2px;
         left: 88px;
         transform: rotate(-53.73deg);
+        @include desktop {
+          width: 1px;
+        }
       }
       &-line2 {
         position: absolute;
@@ -79,6 +96,9 @@
         width: 0.5px;
         height: 172px;
         transform: rotate(55.54deg);
+        @include desktop {
+          width: 1px;
+        }
       }
     }
   }
@@ -90,6 +110,9 @@
     align-items: center;
     min-height: 699px;
     position: relative;
+    @include predesktop {
+      background: url("../images/content/surfclinic.png") 0 170px / contain no-repeat;
+    }
     &-title {
       font-weight: bold;
       font-size: 27.7435px;
@@ -111,6 +134,17 @@
       top: -125px;
       right: 0;
       height: 607px;
+      z-index: -1;
+      @include predesktop {
+        width: 343px;
+        height: 343px;
+        top: 140px;
+      }
+      @include tablets {
+        width: 243px;
+        height: 243px;
+        top: 140px;
+      }
     }
   }
 }

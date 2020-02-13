@@ -33,6 +33,11 @@ body {
   max-width: 1313px;
   width: 100%;
   // width: 1490px;
+  &--intro {
+    @include tablets {
+      padding-top: 25%;
+    }
+  }
 
   @include phones {
     width: 85%;

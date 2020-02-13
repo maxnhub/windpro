@@ -6,6 +6,11 @@
         flex-direction: column;
         width: fit-content;
         margin: 0 auto;
+        @include tablets {
+            width: 100%;
+            margin: 0;
+            padding: 0 130px;
+        }
         &-big {
             display: flex;
             justify-content: flex-start;
@@ -16,6 +21,10 @@
                 width: 413px;
                 height: 413px;
                 margin-right: 14px;
+                @include tablets {
+                    width: 140px;
+                    height: 140px;
+                }
             }
             &-text {
                 max-width: 138px;
@@ -31,17 +40,35 @@
                 position: absolute;
                 bottom: 120px;
                 right: -280px;
+                @include predesktop {
+                    width: 210px;
+                    bottom: 80px;
+                    right: -105px;
+                }
+                @include tablets {
+                    width: 600px;
+                    bottom: 200px;
+                    right: 0;
+                }
             }
         }
         &-small {
             display: flex;
             justify-content: flex-end;
             margin-bottom: 15px;
+            @include tablets {
+                align-items: center;
+                margin-bottom: 214px;
+            }
             &-pic {
                 max-height: 100%;
                 max-width: 100%;
                 width: 195px;
                 height: 195px;
+                @include tablets {
+                    width: 140px;
+                    height: 140px;
+                }
             }
             &-text {
                 max-width: 138px;

@@ -14,5 +14,10 @@
         display: flex;
         position: relative;
         justify-content: center;
+        
+        @include predesktop {
+            display: grid;
+            grid-template-areas: "phonelist logo socials burger";
+        }
     }
 }

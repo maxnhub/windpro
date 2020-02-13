@@ -5,6 +5,9 @@
             white-space: nowrap;
             margin-right: 30px;
             cursor: pointer;
+            @include predesktop {
+                display: none;
+            }
             &:last-child {
                 margin-right: 0;
             }
@@ -12,6 +15,10 @@
                 position: relative;
                 width: 34px;
                 height: 16px;
+                @include predesktop {
+                    display: block;
+                    grid-area: burger;
+                }
             }
         }
     }

@@ -2,11 +2,20 @@
     display: flex;
     &-list {
         display: flex; 
+        padding-top: 51px;
         &--header {
             margin-right: 51px;
         }
+        &--socials {
+            @include predesktop {
+                grid-area: socials;
+            }
+        }
         &--phone{
-            margin-right: 8px;
+            margin-right: 51px;
+            @include predesktop {
+                grid-area: phonelist;
+            }
         }
         &--footer {
             margin: 0 auto;

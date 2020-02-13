@@ -4,6 +4,7 @@
   "bg-color": "#083451",
   "bp-desktop-hd": "1800px",
   "bp-desktop": "1440px",
+  "bp-predesktop": "1420px",
   "bp-tablets": "768px",
   "bp-phones": "480px"
 }
